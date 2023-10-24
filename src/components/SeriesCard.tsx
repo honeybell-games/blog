@@ -66,7 +66,7 @@ export default function ({ series, posts, order }: Props) {
                 <span>{post.data.title}</span>
                 {post.data.planned && (
                   <span class="inline-flex items-center justify-center p-0.5 px-2 bg-yellow-400 rounded-full text-black text-xs">
-                    Planned
+                    Coming soon
                   </span>
                 )}
               </a>

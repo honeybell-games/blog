@@ -1,7 +1,6 @@
-export const SITE_NAME = "NimbusNarratives";
-export const SITE_TITLE = "NimbusNarratives | A personal blog by Abdullah Elsayed (@abdllahdev)";
+export const SITE_NAME = "HoneybellGames";
+export const SITE_TITLE = "HoneybellGamesBlog";
 export const SITE_DESCRIPTION =
-  "NimbusNarratives | A personal blog by Abdullah Elsayed (@abdllahdev)";
-export const TWITTER_HANDLE = "https://twitter.com/abdllah_dev";
-export const GITHUB_HANDLE = "https://github.com/abdllahdev";
-export const CLOUDINARY_NAME = "example";
+  "This blog was crafted with love using the template NimbusNarratives | A personal blog by Abdullah Elsayed (@abdllahdev)";
+export const TWITTER_HANDLE = "https://twitter.com/honeybellgames";
+export const WEBSITE_NAME = "https://honeybellgames.com/";

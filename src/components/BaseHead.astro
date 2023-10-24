@@ -4,7 +4,6 @@ import {
   SITE_NAME,
   SITE_TITLE,
   TWITTER_HANDLE,
-  CLOUDINARY_NAME,
 } from "../consts";
 
 export interface Props {
@@ -53,9 +52,6 @@ function getOgImage({
   }
 
   return [
-    // Add your own Cloudinary account ID.
-    `https://res.cloudinary.com/${CLOUDINARY_NAME}/image/upload`,
-
     // Composed Image Transformations
     `w_1920,h_933,q_100`,
 

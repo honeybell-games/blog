@@ -1,13 +1,12 @@
 ---
 import MdiTwitter from "~icons/mdi/twitter";
-import MdiGithub from "~icons/mdi/github";
-import MdiRss from "~icons/mdi/rss";
+import MdiWebsite from "~icons/mdi/web";
 
 import PostsList from "../components/PostsList.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import SeriesList from "../components/SeriesList.astro";
-import { TWITTER_HANDLE, GITHUB_HANDLE } from "../consts";
+import { TWITTER_HANDLE, WEBSITE_NAME } from "../consts";
 
 const posts = await getCollection("blog");
 
@@ -25,22 +24,13 @@ const featuredSeries = (await getCollection("series")).filter((s) => s.data.feat
   <div class="space-y-10">
     <div class="space-y-4">
       <h1 class="text-4xl text-black dark:text-white font-black">
-        Hello there! <span
-          class="underline underline-offset-2 decoration-fuchsia-600 dark:decoration-fuchsia-400"
-          >I'm Abdullah</span
+        Honeybell <span
+          class="underline underline-offset-2 decoration-orange-600 dark:decoration-orange-400"
+          >Games</span
         >
       </h1>
       <p>
-        Welcome to my blog! I'm a software engineer with experience in <span class="font-black"
-          >OCaml</span
-        >, <span class="font-black">JavaScript/Typescript</span>, <span class="font-black"
-          >Python</span
-        >, <span class="font-black">ReactJS</span>, and <span class="font-black">Node.js</span>. As
-        an enthusiastic learner, I aim to share my journey of exploration with you. Join me as I
-        write about various aspects of computer science, ranging from <span class="font-black"
-          >Programming Languages</span
-        >, <span class="font-black">AI</span>, <span class="font-black">Web Development</span>, to
-        <span class="font-black">Theoretical CS</span>.
+        Game On! We're your indie dev buddies from <span class="font-black">Birmingham, UK</span> and we invite you to explore our blog for the latest <span class="font-black">in game creation and updates</span>!
       </p>
       <div class="space-x-1">
         <a
@@ -52,20 +42,12 @@ const featuredSeries = (await getCollection("series")).filter((s) => s.data.feat
           <span>Twitter</span>
         </a>
         <a
-          href={GITHUB_HANDLE}
+          href={WEBSITE_NAME}
           target="_blank"
           class="inline-flex items-center justify-center space-x-2 py-2 px-3 rounded-md bg-slate-300 hover:bg-slate-400 dark:bg-slate-800 dark:hover:bg-slate-700"
         >
-          <MdiGithub />
-          <span>GitHub</span>
-        </a>
-        <a
-          href="/rss.xml"
-          target="_blank"
-          class="inline-flex items-center justify-center space-x-2 py-2 px-3 rounded-md bg-slate-300 hover:bg-slate-400 dark:bg-slate-800 dark:hover:bg-slate-700"
-        >
-          <MdiRss />
-          <span>RSS</span>
+          <MdiWebsite />
+          <span>Website</span>
         </a>
       </div>
     </div>
@@ -95,7 +77,7 @@ const featuredSeries = (await getCollection("series")).filter((s) => s.data.feat
             <h1 class="text-3xl text-black dark:text-white">Featured Series</h1>
             <a
               href="/series"
-              class="inline-flex items-center justify-center py-0.5 px-3 bg-blue-600 hover:bg-blue-800 rounded-full text-sm text-white"
+              class="inline-flex items-center justify-center py-0.5 px-3 bg-green-600 hover:bg-green-800 rounded-full text-sm text-white"
             >
               View all
             </a>
