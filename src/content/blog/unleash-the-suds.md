@@ -9,8 +9,6 @@ cover: "~/assets/suds_banner_1920x933.png"
 coverAlt: "Hero Image"
 tags:
   - suds
-  - cooperative
-  - online
   - multiplayer
   - steam
 ---
