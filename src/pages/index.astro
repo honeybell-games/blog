@@ -1,12 +1,13 @@
 ---
 import MdiTwitter from "~icons/mdi/twitter";
 import MdiWebsite from "~icons/mdi/web";
+import MdiSteam from "~icons/mdi/steam";
 
 import PostsList from "../components/PostsList.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import SeriesList from "../components/SeriesList.astro";
-import { TWITTER_HANDLE, WEBSITE_NAME } from "../consts";
+import { TWITTER_HANDLE, WEBSITE_NAME, STEAM_HANDLE} from "../consts";
 
 const posts = await getCollection("blog");
 
@@ -48,6 +49,14 @@ const featuredSeries = (await getCollection("series")).filter((s) => s.data.feat
         >
           <MdiWebsite />
           <span>Website</span>
+        </a>
+        <a
+          href={STEAM_HANDLE}
+          target="_blank"
+          class="inline-flex items-center justify-center space-x-2 py-2 px-3 rounded-md bg-slate-300 hover:bg-slate-400 dark:bg-slate-800 dark:hover:bg-slate-700"
+        >
+          <MdiSteam />
+          <span>Steam</span>
         </a>
       </div>
     </div>

@@ -1,7 +1,8 @@
 ---
 import MdiTwitter from "~icons/mdi/twitter";
 import MdiWebsite from "~icons/mdi/web";
-import {TWITTER_HANDLE, WEBSITE_NAME } from "../consts";
+import MdiSteam from "~icons/mdi/steam"
+import {STEAM_HANDLE, TWITTER_HANDLE, WEBSITE_NAME } from "../consts";
 
 const today = new Date();
 ---
@@ -24,6 +25,14 @@ const today = new Date();
     >
       <MdiWebsite />
       <span class="sr-only">Website</span>
+    </a>
+    <a
+      href={STEAM_HANDLE}
+      target="_blank"
+      class="w-8 h-8 flex items-center justify-center rounded-md p-1.5 hover:bg-slate-300 dark:hover:bg-slate-800"
+    >
+      <MdiSteam />
+      <span class="sr-only">Steam</span>
     </a>
   </div>
 </footer>
